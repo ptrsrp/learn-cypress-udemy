@@ -10,7 +10,12 @@ describe('Test Contact Us from via Automation Test Store', () => {
        //cy.xpath("//a[contains(@href, 'contact')]").click()
        cy.get('#ContactUsFrm_first_name').type("Poetri")
        cy.get('#ContactUsFrm_email').type("testest@gmail.co")
+       //assert
+       cy.get('#ContactUsFrm_email').should('have.attr','name','email')
        cy.get('#ContactUsFrm_enquiry').type("Do you provide additional discount on bulk order?")
        cy.get("button[title='Submit']").click()
+       //assert
+       cy.get('.mb40 > :nth-child(3)').should('have.text','Your enquiry has been successfully sent to the store owner!')
+       
     });
 });
