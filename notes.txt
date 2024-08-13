@@ -1,0 +1,14 @@
+install : npm install cypress --save-dev
+run cypress : npx cypress open
+run headless electron browser : ./node_modules/.bin/cypress run
+run non headless electron browser : ./node_modules/.bin/cypress run --headed
+run non headless chrome browser : ./node_modules/.bin/cypress run --headed browser chrome
+run individual file test : ./node_modules/.bin/cypress run --spec cypress/integration/webdriver-uni/selectors.js
+run individual folder test : ./node_modules/.bin/cypress run --spec cypress/integration/webdriver-uni/*
+
+----------
+add xpath
+1. install plugin : npm install -D @cypress/xpath
+2. add require('@cypress/xpath'); in cypress/support/e2e.js
+3. add /// <reference types = "@cypress/xpath"/>
+----------

@@ -1,4 +1,4 @@
-/// <reference types = "Cypress"/>
+/// <reference types = "cypress"/>
 /// <reference types = "@cypress/xpath"/>
 
 describe('Test Contact Us from via Automation Test Store', () => {
