@@ -1,4 +1,4 @@
-/// <reference types = "Cypress"/>
+/// <reference types = "cypress"/>
 
 describe('Selector example', () => {
     it('Examples of Selectors via WebDriverUni Contact Us Page', () => {
